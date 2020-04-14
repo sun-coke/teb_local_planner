@@ -10,11 +10,11 @@ $ sudo apt-get install libboost-all-dev
 ```
 
 ## 3、安装g2o优化器
-××git源码：××
+**git源码：**
 ```
 git clone https://github.com/RainerKuemmerle/g2o.git
 ```
-××依赖更新：××
+**依赖更新：**
 ```
 sudo apt-get install libeigen3-dev 
 sudo apt-get install libsuitesparse-dev 
@@ -22,7 +22,7 @@ sudo apt-get install libqt5-dev
 sudo apt-get install qt5-qmake 
 sudo apt-get install libqglviewer-dev
 ```
-××编译：××
+**编译：**
 ```
 cd g2o
 mkdir build
@@ -30,11 +30,11 @@ cd build
 cmake ..
 make
 ```
-××安装：××
+**安装：**
 ```
 sudo make install
 ```
-方法二（未尝试）
+**方法二（未尝试）**
 ```
 sudo apt-get install libpcl-dev pcl-tools
 ```
@@ -47,9 +47,9 @@ cd catkin_ws && catkin_make
 ```
 
 ## 5、解决catkin_make编译出错
-错误提醒：
+**错误提醒：**
 ![image](https://github.com/sun-coke/teb_local_planner/blob/master/2.png)
-
+**解决方法：**
 修改teb_local_planner/src/optimal_planner.cpp中g2o初始化函数第159、160行指针声明方式“std::unique_ptr”
 ```
   TEBBlockSolver* blockSolver = new TEBBlockSolver(std::unique_ptr<TEBLinearSolver>(linearSolver));
@@ -60,5 +60,6 @@ cd catkin_ws && catkin_make
 ## 6、编译集成
 重新编译即通过（注：代码修改后需要重新编译生效）
 通过插件将teb集成到move_base中，参考move_base笔记
+[move_base](https://github.com/sun-coke/move_base)
 
 
