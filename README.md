@@ -2,7 +2,7 @@
 ## 1、根据CMakefile配置teb依赖包
 ![image](https://github.com/sun-coke/teb_local_planner/blob/master/1.png)
 
-## 2、配置稀疏矩阵库
+## 2、安装稀疏矩阵库
 ```
 $ apt-cache search suitesparse # 查找apt源
 $ sudo apt-get install libsuitesparse-dev
