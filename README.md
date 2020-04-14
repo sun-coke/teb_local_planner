@@ -48,7 +48,9 @@ cd catkin_ws && catkin_make
 
 ## 5、解决catkin_make编译出错
 **错误提醒：**
+
 ![image](https://github.com/sun-coke/teb_local_planner/blob/master/2.png)
+
 **解决方法：**
 修改teb_local_planner/src/optimal_planner.cpp中g2o初始化函数第159、160行指针声明方式“std::unique_ptr”
 ```
