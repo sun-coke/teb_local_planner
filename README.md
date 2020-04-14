@@ -5,7 +5,7 @@
 ## 2、配置稀疏矩阵库
 ```
 $ apt-cache search suitesparse # 查找apt源
-$ sudo apt-get install libsuitesparse-dev‘
+$ sudo apt-get install libsuitesparse-dev
 $ sudo apt-get install libboost-all-dev
 ```
 
