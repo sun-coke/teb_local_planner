@@ -61,7 +61,8 @@ cd catkin_ws && catkin_make
 
 ## 6、编译集成
 重新编译即通过（注：代码修改后需要重新编译生效）
-通过插件将teb集成到move_base中，参考move_base笔记
-[move_base](https://github.com/sun-coke/move_base)
+
+通过插件将teb集成到move_base中，参考[move_base](https://github.com/sun-coke/move_base)
+
 
 
