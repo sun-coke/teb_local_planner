@@ -1,5 +1,5 @@
 # teb_local_planner包配置坑点笔记
-## 1、根据Cmakefile配置teb依赖包
+## 1、根据CMakefile配置teb依赖包
 ![image](https://github.com/sun-coke/teb_local_planner/blob/master/1.png)
 
 ## 2、安装g2o优化器
